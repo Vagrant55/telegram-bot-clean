@@ -14,7 +14,7 @@ const SPREADSHEET_ID = "1utCG8rmf449THR5g6SHvSK4pp6-nj7UEgSgP4H1_isc";
 const SERVICE_ACCOUNT = {
   "type": "service_account",
   "project_id": "kaf-471314",
-  "private_key_id": "5a6f71bc00b6b29c61642fc35de7d505d34e2dcf" 
+  "private_key_id": "5a6f71bc00b6b29c61642fc35de7d505d34e2dcf", 
   "private_key": process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'), // 🔐 Ключ не в коде — безопасно!
   "client_email": "id-22-bot@kaf-471314.iam.gserviceaccount.com",
   "client_id": "118228097079633655651",
