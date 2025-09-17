@@ -57,23 +57,21 @@ export default async function handler(req, res) {
   }
 
   // Обработка нажатий кнопок
-  if (callback_query) {
+    if (callback_query) {
     const chatId = callback_query.message.chat.id;
     const data = callback_query.data;
     const name = callback_query.from.first_name || "Аноним";
-
-    // Сотрудник выбирает тип
+ //  Сотрудник выбирает тип
     if (data === 'type_military' || data === 'type_civil') {
       const type = data === 'type_military' ? 'military' : 'civil';
-      await saveEmployee(chatId, name, type); // Сохраняем в таблицу
+      await saveEmployee(chatId, name, type);
       await sendText(chatId, `✅ Вы выбрали: ${type === 'military' ? 'Военный' : 'Гражданский'}.`);
       return res.status(200).json({ ok: true });
+     }
     }
-  }
-
   res.status(200).json({ ok: true });
 }
-
+ 
 // 📤 Функция отправки сообщения
 async function sendText(chatId, text, replyMarkup = null) {
   let url = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(text)}`;
