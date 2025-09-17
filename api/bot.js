@@ -70,7 +70,7 @@ export default async function handler(req, res) {
      }
     }
   res.status(200).json({ ok: true });
-}
+ }
  
 // 📤 Функция отправки сообщения
 async function sendText(chatId, text, replyMarkup = null) {
