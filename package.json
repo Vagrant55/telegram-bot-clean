@@ -1,0 +1,9 @@
+{
+  "name": "telegram-bot",
+  "version": "1.0.0",
+  "main": "api/bot.js",
+  "type": "module", // Позволяет использовать import/export
+  "dependencies": {
+    "googleapis": "^129.0.0" // Библиотека для работы с Google API
+  }
+}
