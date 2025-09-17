@@ -47,8 +47,8 @@ export default async function handler(req, res) {
     if (text === "/start") {
       const keyboard = {
         inline_keyboard: [
-          [{ text: "🎖️ Военный", callback_data: "type_military" }],
-          [{ text: "👔 Гражданский", callback_data: "type_civil" }]
+          [{ text: "🎖️ Военный", callback_: "type_military" }],
+          [{ text: "👔 Гражданский", callback_: "type_civil" }]
         ]
       };
       await sendText(chatId, "👋 Привет! Пожалуйста, выберите ваш тип:", keyboard);
