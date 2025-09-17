@@ -1,4 +1,4 @@
-
+{
   "version": 2, 
   "builds": [
     {
@@ -12,3 +12,4 @@
       "dest": "api/bot.js"
     }
   ]
+} 
