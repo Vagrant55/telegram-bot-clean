@@ -4,7 +4,7 @@ import { google } from 'googleapis';
 // 🧠 Простой in-memory   кэш для  хранения состояния админов
 const adminState = new Map();
 
-// 🔑 Настройки — замените  на свои
+// 🔑 Настройки — замените   на свои
 const TOKEN = "7991590846:AAHp6H7VW_dPhH3tf_zAjTj8aQSCYZcm6iU";
 const ADMIN_CHAT_IDS = [935264202,1527919229 ]; // ← Добавьте chat_id админов через запятую
 const SPREADSHEET_ID = "1utCG8rmf449THR5g6SHvSK4pp6-nj7UEgSgP4H1_isc";
