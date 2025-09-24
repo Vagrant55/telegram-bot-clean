@@ -15,7 +15,7 @@ const SERVICE_ACCOUNT = {
   "project_id": "kaf-471314",
   "private_key_id": "6650093997955a7f8e1341a4a8f5482ed84ca354",
   "private_key": process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-  "client_email": "bot22kaf@kaf-471314.iam.gserviceaccount.com.",
+  "client_email": "bot22kaf@kaf-471314.iam.gserviceaccount.com",
   "client_id": "115744004771507568867",
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
   "token_uri": "https://oauth2.googleapis.com/token",
